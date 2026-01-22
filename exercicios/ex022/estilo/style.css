@@ -1,0 +1,103 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+:root {
+    --font1: Verdedana, geneva, sans-serif, tamoha;
+    --font2: 'Passion One', cursive;
+    --font3: 'Sriracha', cursive;                                                                                                                                                                                               
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body  { 
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.678);
+    font-family: var(--font1);
+}
+
+header {
+    background-color: rgb(0, 145, 145);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    font-size: 10vw;
+    margin-bottom: 0px;
+    padding-top: 25px;
+    font-variant: small-caps;
+    font-family: var(--font2);
+}
+header p {
+    font-size:1.5em;
+    margin-top: 5px;
+}
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover {
+    text-decoration: underline;
+}
+section {
+    padding-top: 10vh;
+    padding-right: 10vh;
+    line-height: 1.3em;
+    font-family: var(--font3);
+    font-size: 3.5vw;
+    padding-left: 3vw;
+}
+section.normal {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(0, 145, 145, 0.678);
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.678);
+}   
+section.normal > p {
+    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.678);    
+}
+section.imagem {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.678);
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.678);
+    background-attachment: fixed;
+}
+section.imagem > p {
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.479);
+    padding: 10px;
+    border-radius: 10px;    
+}
+section.nornal p, section.imagem p {
+    margin-bottom: 20px;
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-size: cover;
+    background-position: center;
+}
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 5px;
+    bottom: 0;
+}
