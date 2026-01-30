@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table, th, td {
+            border: 1px solid rgb(0, 0, 0);
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        th, td {
+            padding: 10px;
+        }
+        thead {
+            background-color: grey;
+            color: rgb(255, 255, 255);
+        }
+        tfoot {
+            background-color: gray;
+            color: white;
+        }
+        caption {
+            font-size: 1.5em;
+            margin: 10px;
+            font-weight: bold;
+            padding: 5px;
+            background-color: aliceblue;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        Uso de tabelas em html002
+    </h1>
+    <table>
+        <caption>
+            População dos Estados Brasileiros
+        </caption>
+        <thead>
+            <tr>
+                <th>
+                    Estados
+                </th>
+                <th style="width: 10px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>46 milhões</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21 milhões</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 milhõesa</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de habitantes</th>
+                <td><strong>84 milhões</strong>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
